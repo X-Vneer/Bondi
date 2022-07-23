@@ -1,0 +1,5 @@
+.footer ul li:hover {
+  color: white;
+  padding-right: 5px;
+  cursor: pointer;
+}

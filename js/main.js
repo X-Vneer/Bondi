@@ -1,3 +1,8 @@
+let loader = document.querySelector(".loader-holder");
+window.addEventListener("load", () => {
+  document.body.removeChild(loader);
+});
+
 // start our work filter
 let ourWork = document.querySelector(".our-work");
 let ourWrokA = false;

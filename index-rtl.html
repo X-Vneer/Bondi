@@ -25,28 +25,51 @@
     />
   </head>
   <body>
+    <div class="loader-holder">
+      <div class="loader">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <div class="square clear"></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <div class="square clear"></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+      </div>
+    </div>
     <!-- start nav  -->
     <nav class="navbar navbar-expand-lg sticky-top" id="nav">
       <div class="container flex-row-reverse">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-duotone fa-bars" style="color: white"></i>
-        </button>
+        <div class="flex-row-reverse d-flex">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-duotone fa-bars" style="color: white"></i>
+          </button>
+          <div class="change change-mobile">
+            <a href="index.html"
+              ><img
+                src="images/icons8-google-translate.svg"
+                alt="change language iocn"
+            /></a>
+          </div>
+        </div>
+
         <div
           class="collapse navbar-collapse flex-row-reverse"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row-reverse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row-reverse">
             <li class="nav-item">
               <a
                 class="nav-link p-2 p-lg-3 active"
@@ -68,16 +91,28 @@
               <a class="nav-link p-2 p-lg-3" href="#contact">تواصل معنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 p-lg-3" href="index.html">English</a>
+              <div
+                class="search d-block nav-link ps-2 pe-2 mt-2 mb-2 pe-lg-3 ps-lg-3"
+              >
+                <i class="fa-duotone fa-magnifying-glass"></i>
+              </div>
             </li>
           </ul>
-          <div class="search ps-3 pe-3 d-none d-lg-block">
-            <i class="fa-duotone fa-magnifying-glass"></i>
-          </div>
-          <a class="btn rounded-pill main-btn ps-4 pe-4" href="">تسجيل دخول</a>
+
+          <a class="btn ms-3 rounded-pill main-btn ps-4 pe-4" href=""
+            >تسجيل دخول</a
+          >
+        </div>
+        <div class="change">
+          <a href="index.html"
+            ><img
+              src="images/icons8-google-translate.svg"
+              alt="change language iocn"
+          /></a>
         </div>
       </div>
     </nav>
+
     <!-- end nav  -->
     <!-- start landing  -->
     <div
@@ -566,7 +601,7 @@
     </div>
     <div class="me pt-3 pb-3 text-center">
       <div class="container">
-        <p class="mb-0">
+        <p class="mb-0 fs-5 fw-bold">
           تم تحويل هذا التصميم لكود بواسطة <span>منير مزيد </span> تواصل معي
         </p>
         <div class="contactme row">

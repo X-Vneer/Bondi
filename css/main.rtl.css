@@ -1,3 +1,7 @@
+.navbar ul {
+  direction: rtl;
+}
+
 .footer ul li:hover {
   color: white;
   padding-right: 5px;

@@ -6,6 +6,9 @@
   --yellow: #ffc400;
   --sec-color: #eff7fa;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -410,5 +413,10 @@ body {
   55.9% {
     opacity: 0;
     top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    cursor: default !important;
   }
 }
